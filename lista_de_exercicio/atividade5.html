@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando classe eleitoral</title>
+</head>
+<body>
+    <h1>Verificando classe eleitoral</h1>
+    <script>
+
+      let idade = parseFloat(prompt("Insira sua idade"))  
+
+      if(idade <= 0 || idade >= 120){
+          document.write("Erro! Digite uma idade válida")
+      }else if(idade <= 16){
+          document.write("Não eleitor")
+      }else if(idade >= 16 && idade <= 18){
+          document.write("Eleitor facutativo")
+      }else if(idade >= 18 && idade < 65){
+          document.write("Eleitor obrigatório")
+      }else {
+          document.write("Eleitor facultativo")
+      }
+        
+    </script>
+</body>
+</html>

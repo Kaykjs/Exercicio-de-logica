@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando valor da peças</title>
+</head>
+<body>
+    <h1>Verificand valor das peças</h1>
+    <script>
+        let ipi = parseFloat(prompt("Digite o valor da porcentagem"))
+        let valor1 = parseFloat(prompt("Qual é o valor da peça numero 1?"))
+        let quant1 = parseFloat(prompt("Qual é a quantidade da peças numero 1?"))
+        let valor2 = parseFloat(prompt("Qual é o valor da peça numero 2?"))
+        let quant2 = parseFloat(prompt("Qual é a quantidade de peças numero 2?"))
+        let valorfinal = (valor1*quant1 + valor2*quant2)*(ipi/100 + 1)
+
+        document.write("Valor total: " + valorfinal)
+    </script>
+</body>
+</html>

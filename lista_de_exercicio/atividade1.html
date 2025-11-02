@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vericando calorias</title>
+</head>
+<body>
+    <script>
+        let prato = parseInt(prompt("1-Vegetariano 2-Peixe 3-Frango 4-Carne"))
+        let bebida = parseInt(prompt("1-Chá 2-Suco de laranja 3-Suco de melão 4-Refrigerante diet"))
+        let sobremesa = parseInt(prompt("1-Abacaxi 2-Sorvete diet 3-Mouse diet 4-Mouse de chocolate"))
+
+        let caloriasPrato = 0, caloriasBebida = 0, caloriasSobremesa 
+
+        switch(prato){
+           case 1: caloriasPrato = 180; break;
+           case 2: caloriasPrato = 230; break;
+           case 3: caloriasPrato = 250; break;     
+           case 4: caloriasPrato = 350; break;
+        }
+
+        switch(bebida){
+           case 1: caloriasBebida = 20; break;
+           case 2: caloriasBebida = 70; break;
+           case 3: caloriasBebida = 100; break;
+           case 4: caloriasBedida = 65; break;
+        }
+
+        switch(sobremesa){
+           case 1: caloriasSobremesa = 75; break;
+           case 2: caloriasSobremesa = 110; break;
+           case 3: caloriasSobremesa = 170; break;
+           case 4: caloriasSobremesa = 200; break;
+        }
+
+        let totalCalorias = caloriasPrato + caloriasBebida + caloriasSobremesa
+
+        document.write("Toral de colorias " + totalCalorias + "cal")
+    </script>
+</body>
+</html>

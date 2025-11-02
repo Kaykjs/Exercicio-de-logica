@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando ordem dos valores</title>
+</head>
+<body>
+    <h1>Verificando ordem dos valores</h1>
+    <div id="resultado"></div>
+    <script>
+
+        let a = parseFloat(prompt("Insira o valor de *A* "))
+        let b = parseFloat(prompt("Insira o valor de *B* "))
+        let c = parseFloat(prompt("Insira o valor de *C* "))
+        
+        function ordenandonumeros(a,b,c){
+            let numeros = [a,b,c];
+            numeros.sort((a,b) => a - b)
+            document.getElementById("resultado").innerHTML = "Ordem dos números: " + numeros.join(", ");
+        }
+
+        ordenandonumeros(a,b,c);
+
+    </script>
+</body>
+</html>

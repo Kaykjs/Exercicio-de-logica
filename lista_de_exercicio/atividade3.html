@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando crédito</title>
+</head>
+<body>
+    <h1>Verificando crédito</h1>
+    <script>
+
+        let saldo = parseFloat(prompt("Insira seu saldo"))
+        let credito
+
+        if(saldo <= 500){
+           document.write("Você não possui créditos")  
+        }else if(saldo >= 501 || saldo <= 1000){
+           credito = (saldo * 0.30) 
+           document.write("Seu saldo é de " + saldo + " Seu crédito é de " + credito)
+        }else if(saldo >= 1001 || saldo <= 3000){
+           credito = (saldo * 0.40) 
+           document.write("Seu saldo é de " + saldo + " Seu crédito é de " + credito)
+        }else if(saldo >= 3001){
+           credito = (saldo * 0.50) 
+           document.write("Seu saldo é de " + saldo + " Seu crédito é de " + credito)
+        }
+        
+    </script>
+</body>
+</html>
