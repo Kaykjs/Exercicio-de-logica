@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando numeros</title>
+</head>
+
+<body>
+    <h1>Verificando numeros</h1>
+    <script>
+       let c1 = 0;
+        let c2 = 0;
+        let c3 = 0; 
+        
+        const total = 20;
+        
+
+        for (let i = 1; i <= total; i++) {
+            
+            const entrada = prompt(`Número ${i} de ${total}: Digite um valor:`);
+            const num = parseFloat(entrada);
+            
+            if (num >= 0 && num <= 100) {
+                c1++;
+                document.write(`<p>Número ${i} (${num}): [0-100]</p>`);
+            } else if (num >= 101 && num <= 200) {
+                c2++;
+                document.write(`<p>Número ${i} (${num}): [101-200]</p>`);
+            } else if (num > 200) {
+                c3++;
+                document.write(`<p>Número ${i} (${num}): (> 200)</p>`);
+            } else {
+                document.write(`<p style="color: gray;">Número ${i} (${num}): (Fora dos limites/Inválido)</p>`);
+            }
+        }
+        
+        document.write(`<h2>Resultados da Contagem:</h2>`);
+        document.write(`<p>Entre 0 e 100: ${c1}</p>`);
+        document.write(`<p>Entre 101 e 200: ${c2}</p>`);
+        document.write(`<p>Maiores que 200: ${c3}</p>`);
+    </script>
+</body>
+
+</html>

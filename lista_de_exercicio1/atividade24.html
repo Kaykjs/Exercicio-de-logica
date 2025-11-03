@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando sequencia</title>
+</head>
+<body>
+    <h1>Verificando sequencia</h1>
+    <script>
+       let soma = 0;
+       let numero;
+        
+        do {
+            const entrada = prompt("Digite um número para somar:");
+            numero = parseFloat(entrada);
+            
+            if (!isNaN(numero) && numero >= 0) {
+                soma += numero;
+                document.write(`<p>Somado: ${numero}</p>`);
+            } else if (numero < 0) {
+                 document.write(`<p style="color: red;">Finalizado: ${numero} (negativo)</p>`);
+            } else {
+                 document.write(`<p style="color: gray;">Ignorado: "${entrada}" (inválido)</p>`);
+            }
+        
+        } while (numero >= 0);
+    
+        document.write(`A soma total dos números positivos é: ${soma.toFixed(2)}`);
+    </script>
+</body>
+</html>
