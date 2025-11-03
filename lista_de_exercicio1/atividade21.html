@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando prestacoes</title>
+</head>
+<body>
+    <h1>Verificando prestacoes</h1>
+    <script>
+        const numeroDePrestacoes = 5;
+        
+        const entradaValor = prompt("Insira o valor total da compra:");
+        const valorTotal = parseFloat(entradaValor);
+
+        const valorPrestacao = valorTotal / numeroDePrestacoes;
+        
+        document.write(`Valor Total da Compra: R$ ${valorTotal}<br>`);
+        document.write(`Parcelamento em: ${numeroDePrestacoes}<br>`);
+        document.write(`O valor de cada prestação é: R$ ${valorPrestacao}<br>`);
+    </script>
+</body>
+</html>

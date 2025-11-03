@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando vendas</title>
+</head>
+<body>
+    <h1>Verificando vendas</h1>
+    <script>
+        let nome = prompt("Insira o nome do vendedor:");
+        let salarioFixo = parseFloat(prompt("Insira o salário fixo:"));
+        let totalVendas = parseFloat(prompt("Insira o total de vendas no mês:"));
+
+        let comissao = totalVendas * 0.15;
+
+        let salarioFinal = salarioFixo + comissao;
+
+        alert(`Nome: ${nome}\nSalário fixo: R$ ${salarioFixo.toFixed(2)}\nSalário final: R$ ${salarioFinal.toFixed(2)}`);
+        console.log(`Nome: ${nome}`);
+        console.log(`Salário fixo: R$ ${salarioFixo.toFixed(2)}`);
+        console.log(`Salário final: R$ ${salarioFinal.toFixed(2)}`);
+    </script>
+</body>
+
+</html>

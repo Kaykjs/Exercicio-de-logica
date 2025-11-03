@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando soma dos numeros</title>
+</head>
+<h1>Verificando soma dos numeros</h1>
+<body>
+    <script>
+        let soma = 0;
+        const totalDeNumeros = 10;
+        
+        for (let i = 1; i <= totalDeNumeros; i++) {
+            const entrada = prompt(`Digite o número ${i} de ${totalDeNumeros}:`);
+            const numero = parseFloat(entrada);
+            
+            soma += numero; 
+            
+            document.write(`<p>Número ${i} lido:${numero}</p>`);
+        }
+        
+        document.write(`A Soma Total é: ${soma}`);
+    </script>
+</body>
+</html>

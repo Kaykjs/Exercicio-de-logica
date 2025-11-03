@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando conversão</title>
+</head>
+<body>
+    <h1>Verificando conversão</h1>
+    <script>
+        const entradaCotacao = prompt("Insira o valor da cotação do dólar:");
+        const cotacaoDolar = parseFloat(entradaCotacao);
+
+        const entradaDolares = prompt("Insira a quantidade de dólares que você tem:");
+        const quantidadeDolares = parseFloat(entradaDolares);
+
+        const valorEmReais = quantidadeDolares * cotacaoDolar;
+
+        document.write(`Cotação US$ 1.00: R$ ${cotacaoDolar}<br>`);
+        document.write(`Quantidade de dólares: US$ ${quantidadeDolares}<br>`);
+        document.write(`O valor em Reais (R$) é: ${valorEmReais}<br>`);
+    </script>
+</body>
+</html>

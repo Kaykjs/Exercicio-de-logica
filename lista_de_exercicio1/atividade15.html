@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Idade</title>
+</head>
+<body>
+    <h1>Verificando Idade</h1>
+    <script>
+        let somaTotal = 0;
+        const totalPessoas = 20;
+
+        for (let i = 1; i <= totalPessoas; i++) {
+            
+            const entrada = prompt(`Idade da Pessoa ${i} de ${totalPessoas}:`);
+            
+            const idade = parseInt(entrada);
+            
+            somaTotal += idade; 
+            
+            document.write(`<p>Pessoa ${i}: ${idade} anos.</p>`);
+        }
+        
+        document.write(`A soma de todas as 20 idades é: ${somaTotal}`);
+    </script>
+</body>
+</html>

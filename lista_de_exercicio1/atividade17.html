@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando maiores de idade</title>
+</head>
+<body>
+    <h1>Verificando maiores de idade</h1>
+    <script>
+        let contadorMaiores = 0;
+        const totalPessoas = 20;
+        const idadeMinima = 18;
+        
+        for (let i = 1; i <= totalPessoas; i++) {
+            
+            const entrada = prompt(`Pessoa ${i} de ${totalPessoas}: Idade:`);
+            const idade = parseInt(entrada);
+            
+            if (!isNaN(idade) && idade >= idadeMinima) {
+                contadorMaiores++;
+                document.write(`<p>Pessoa ${i}: ${idade} anos (Maior)</p>`);
+            } else {
+                document.write(`<p style="color: gray;">Pessoa ${i}: ${idade} anos (Menor ou Inválida)</p>`);
+            }
+        }
+        
+        document.write(`Total de Maiores de Idade ( ${idadeMinima} anos):${contadorMaiores}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando numeros maiores</title>
+</head>
+<body>
+    <h1>Verificando numeros maiores</h1>
+    <script>
+        let contadorMaiores = 0;
+        const totalNumeros = 20;
+        const limite = 8;
+        
+        for (let i = 1; i <= totalNumeros; i++) {
+            
+            const entrada = prompt(`Número ${i} de ${totalNumeros}: Digite um valor:`);
+            const numero = parseFloat(entrada);
+            
+            if (!isNaN(numero) && numero > limite) {
+                contadorMaiores++;
+                document.write(`<p>Número ${i}: ${numero} (maior que ${limite})</p>`);
+            } else {
+                 document.write(` style="color: gray;">Número ${i}: ${numero} (Menor ou Inválido)`);
+            }
+        }
+
+        document.write(`Total de Números Maiores que ${limite}: ${contadorMaiores}`);
+    </script>
+</body>
+</html>

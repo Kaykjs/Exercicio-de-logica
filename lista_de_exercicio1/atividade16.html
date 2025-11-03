@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando a media das idades</title>
+</head>
+<body>
+    <h1>Verificando a media das idades</h1>
+    <script>
+        let somaTotal = 0;
+        const totalPessoas = 20;
+
+        for (let i = 1; i <= totalPessoas; i++) {
+            
+            const entrada = prompt(`Pessoa ${i} de ${totalPessoas}: Digite a idade:`);
+            const idade = parseInt(entrada);
+            
+            somaTotal += idade; 
+            
+            document.write(`<p>Pessoa ${i} lida: ${idade} anos.</p>`);
+        }
+
+        const media = somaTotal / totalPessoas;
+
+        document.write(`A Soma Total é: **${somaTotal}**`);
+        document.write(`A MÉDIA das Idades é: **${media.toFixed(2)}**`);
+    </script>
+</body>
+</html>

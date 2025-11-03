@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando pessoa mais nova</title>
+</head>
+<body>
+    <h1>Verificando pessoa mais nova</h1>
+    <script>
+        let menorIdade = Infinity; 
+        let nomePessoaMaisNova = "";
+        const totalPessoas = 10;
+
+        for (let i = 1; i <= totalPessoas; i++) {
+            
+            const nome = prompt(`Pessoa ${i} de ${totalPessoas}: Digite o NOME:`);
+            const entradaIdade = prompt(`Pessoa ${i} de ${totalPessoas}: Digite a IDADE de ${nome}:`);
+            const idade = parseInt(entradaIdade);
+            
+            document.write(`<p>Lido: ${nome}, ${idade} anos.</p>`);
+            
+            if (!isNaN(idade) && idade < menorIdade) {
+                
+                menorIdade = idade;             
+                nomePessoaMaisNova = nome;
+            }
+        }
+        
+        if (nomePessoaMaisNova) {
+             document.write(`A Pessoa mais nova é: ${nomePessoaMaisNova}, com ${menorIdade} anos.`);
+        } else {
+             document.write(`<p style="color: red;">Não foi possível determinar o nome (entradas inválidas).</p>`);
+        }
+    </script>
+</body>
+</html>
